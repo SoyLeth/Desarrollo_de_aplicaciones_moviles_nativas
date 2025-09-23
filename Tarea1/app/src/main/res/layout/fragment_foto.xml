@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Barra superior -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tarea 1 (ImageView)"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:background="#b57edc"
+            android:textColor="@android:color/white"
+            android:padding="12dp"/>
+
+        <!-- Subtítulo centrado -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Carga tu fotografía 📸"
+            android:textStyle="bold"
+            android:textColor="#b57edc"
+            android:gravity="center"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Imagen -->
+        <ImageView
+            android:id="@+id/ivFoto"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Botones de acción individual -->
+        <Button
+            android:id="@+id/btnCargarFoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cargar foto"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/btnVolverCargar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Volver a cargar"
+            android:layout_marginBottom="16dp"
+            android:visibility="gone"/>
+
+        <!-- Botones Regresar y Siguiente en la misma línea -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginBottom="16dp">
+
+            <Button
+                android:id="@+id/btnRegresarFoto"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Regresar"
+                android:layout_marginEnd="8dp"/>
+
+            <Button
+                android:id="@+id/btnSiguienteFoto"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Siguiente"
+                android:visibility="gone"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
