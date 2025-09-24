@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/nav_textfields" android:title="TextFields"
+        android:icon="@android:drawable/ic_menu_edit"/>
+    <item android:id="@+id/nav_buttons" android:title="Botones"
+        android:icon="@android:drawable/ic_menu_send"/>
+    <item android:id="@+id/nav_selection" android:title="Selección"
+        android:icon="@android:drawable/ic_menu_agenda"/>
+    <item android:id="@+id/nav_list" android:title="Listas"
+        android:icon="@android:drawable/ic_menu_sort_by_size"/>
+    <item android:id="@+id/nav_info" android:title="Info"
+        android:icon="@android:drawable/ic_menu_info_details"/>
+</menu>

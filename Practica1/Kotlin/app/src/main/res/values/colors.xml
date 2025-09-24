@@ -1,0 +1,11 @@
+<resources>
+    <!-- MainActivity (lavanda) -->
+    <color name="lavender">#E6E6FA</color>
+    <color name="lavender_light">#F3F3FF</color>
+    <color name="lavender_accent">#D8BFD8</color>
+
+    <!-- SecondActivity (rosa pastel) -->
+    <color name="pastel_pink">#FFB6C1</color>        <!-- rosa pastel base -->
+    <color name="pastel_pink_light">#FFD6DC</color>  <!-- rosa más claro -->
+    <color name="pastel_pink_accent">#FFDEE4</color> <!-- rosa suave/acento -->
+</resources>

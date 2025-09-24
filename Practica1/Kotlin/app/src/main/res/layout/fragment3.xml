@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:padding="16dp"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/lavender_light">
+
+    <TextView
+        android:text="⚙️ Elementos de selección"
+        android:textSize="20sp" android:textStyle="bold"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+    <CheckBox
+        android:id="@+id/chkOption"
+        android:text="Opción 1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton android:id="@+id/radio1" android:text="Radio 1"/>
+        <RadioButton android:id="@+id/radio2" android:text="Radio 2"/>
+    </RadioGroup>
+
+    <Switch
+        android:id="@+id/switchOption"
+        android:text="Switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/txtResultSelection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"/>
+</LinearLayout>

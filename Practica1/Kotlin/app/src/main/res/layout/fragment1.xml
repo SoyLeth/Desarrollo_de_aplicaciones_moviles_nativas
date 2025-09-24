@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:padding="16dp"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/lavender_light">
+
+    <TextView
+        android:text="📝 TextFields"
+        android:textSize="20sp" android:textStyle="bold"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+    <TextView android:text="Escribe tu nombre y pulsa el botón."
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:hint="Nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnShowText"
+        android:text="Mostrar saludo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"/>
+</LinearLayout>
