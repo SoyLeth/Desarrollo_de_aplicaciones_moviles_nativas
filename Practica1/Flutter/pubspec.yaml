@@ -1,0 +1,26 @@
+name: practica1_flutter
+description: "Proyecto de práctica en Flutter con 2 activities y 5 widgets interactivos."
+publish_to: 'none' # evitar publicación en pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.9.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  fluttertoast: ^8.2.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
+  # Activa esta sección si agregas imágenes locales en assets/
+  # assets:
+  #   - assets/images/
