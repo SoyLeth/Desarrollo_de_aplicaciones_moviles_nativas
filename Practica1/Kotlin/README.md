@@ -9,32 +9,32 @@ La aplicación contiene:
 2 Activities:
 - MainActivity (lavanda): muestra fragments individualmente con navegación mediante BottomNavigation.
 
-![Activity1](images/activity1.jpg)
+<img width="359" height="779" alt="Activity1" src="images/activity1.jpg" />
 
 - SecondActivity (rosa pastel): muestra varios fragments combinados en una misma pantalla.
 
-![Activity2](images/activity2.jpg)
+<img width="359" height="779" alt="Activity2" src="images/activity2.jpg" />
 
 5 Fragments:
 1. Fragment1 (TextFields): campos de texto editables con interacción de botones.
 
-![TextFields](images/fragment1.jpg)
+<img width="359" height="779" alt="TextFields" src="images/fragment1.jpg" />
 
 2. Fragment2 (Botones): botones normales e ImageButton con feedback mediante Toast.
 
-![Botones](images/fragment2.jpg)
+<img width="359" height="779" alt="Botones" src="images/fragment2.jpg" />
 
 3. Fragment3 (Elementos de selección): CheckBox, RadioButton y Switch interactivos.
 
-![Seleccion](images/fragment3.jpg)
+<img width="359" height="779" alt="Seleccion" src="images/fragment3.jpg" />
 
 4. Fragment4 (Listas): RecyclerView o ListView para mostrar listas.
 
-![Listas](images/fragment4.jpg)
+<img width="359" height="779" alt="Listas" src="images/fragment4.jpg" />
 
 5. Fragment5 (Elementos de información): TextView, ImageView y ProgressBar simulando carga.
 
-![Informacion](images/fragment5.jpg)
+<img width="359" height="779" alt="Informacion" src="images/fragment5.jpg" />
 
 Los fragments son adaptativos, cambiando su color de fondo según la Activity donde se cargan, logrando una experiencia visual coherente.
 
