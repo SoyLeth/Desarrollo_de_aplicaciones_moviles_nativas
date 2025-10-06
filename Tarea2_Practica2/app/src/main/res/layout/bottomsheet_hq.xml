@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:overScrollMode="always">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Título centrado con color de tema -->
+        <TextView
+            android:text="JYP HQ"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="?attr/colorOnBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:gravity="center" />
+
+        <ImageView
+            android:id="@+id/imgHq1"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:src="@drawable/hq_01"
+            android:contentDescription="Fachada de JYP HQ"
+            android:layout_marginTop="8dp" />
+
+        <ImageView
+            android:id="@+id/imgHq2"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:src="@drawable/hq_02"
+            android:contentDescription="Lobby de JYP HQ"
+            android:layout_marginTop="8dp" />
+
+        <ImageView
+            android:id="@+id/imgHq3"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:src="@drawable/hq_03"
+            android:contentDescription="Interior de JYP HQ"
+            android:layout_marginTop="8dp" />
+
+        <!-- Cuerpo con color de tema (superficie) -->
+        <TextView
+            android:id="@+id/txtHq"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:lineSpacingExtra="2dp"
+            android:textColor="?attr/colorOnSurface"
+            android:text="JYP Entertainment (en hangul, JYP 엔터테인먼트), es un conglomerado de multinacionales del entretenimiento y sellos discográficos, fundado en Seúl (Corea del Sur) en 1997 por J.Y. Park. Opera como sello discográfico, agencia de talentos, productora musical, empresa de gestión de eventos, productora de conciertos y editorial musical, y es una de las compañías de entretenimiento más grandes de Corea del Sur. La compañía también opera filiales y divisiones a nivel internacional. De ella han salido artistas como: Twice, 2PM, Stray Kids, Day6, Boy Story, Itzy, Xdinary Heroes, Nmixx, NiziU, VCHA, Nexz y KickFlip." />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

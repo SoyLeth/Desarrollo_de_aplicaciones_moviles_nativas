@@ -1,0 +1,8 @@
+<resources>
+    <!-- Textos en tarjetas -->
+    <color name="cardTextColor">#FFFFFF</color> <!-- blanco -->
+
+    <!-- Textos en bottom sheets -->
+    <color name="sheetTitleColor">#FFFFFF</color> <!-- blanco -->
+    <color name="sheetBodyColor">#EDEDED</color>  <!-- gris muy claro -->
+</resources>

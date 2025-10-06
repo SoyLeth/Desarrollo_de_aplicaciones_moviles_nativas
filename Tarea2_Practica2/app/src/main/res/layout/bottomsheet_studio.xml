@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:overScrollMode="always">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Título centrado con color de tema -->
+        <TextView
+            android:text="Estudio de Grabación"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="?attr/colorOnBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:gravity="center" />
+
+        <ImageView
+            android:id="@+id/imgStudio"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:src="@drawable/studio_a"
+            android:contentDescription="Foto del estudio de grabación"
+            android:layout_marginTop="8dp" />
+
+        <VideoView
+            android:id="@+id/videoStudio"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginTop="8dp"
+            android:keepScreenOn="true"
+             />
+
+        <!-- Texto informativo opcional -->
+        <TextView
+            android:id="@+id/txtStudio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:lineSpacingExtra="2dp"
+            android:textColor="?attr/colorOnSurface"
+            android:text="" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

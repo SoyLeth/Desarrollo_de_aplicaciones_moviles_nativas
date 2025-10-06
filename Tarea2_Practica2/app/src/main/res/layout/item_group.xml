@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="24dp"
+    android:paddingRight="24dp">
+
+    <!-- Frente -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/frontCard"
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:layout_gravity="center"
+        android:foreground="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:stateListAnimator="@null"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="0dp"
+        app:strokeWidth="0dp"
+        app:strokeColor="@android:color/transparent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- Nombre -->
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="?attr/colorOnBackground"
+                android:text="Nombre del grupo"/>
+
+            <!-- Logo centrado -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/imgLogo"
+                    android:layout_width="220dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitCenter"
+                    android:contentDescription="Logo del grupo"/>
+            </FrameLayout>
+
+            <!-- Slogan -->
+            <TextView
+                android:id="@+id/txtSlogan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="8dp"
+                android:textSize="16sp"
+                android:textColor="?attr/colorOnSurface"
+                android:text="Eslogan del grupo"/>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Reverso -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/backCard"
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:foreground="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:stateListAnimator="@null"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="0dp"
+        app:strokeWidth="0dp"
+        app:strokeColor="@android:color/transparent">
+
+        <ImageView
+            android:id="@+id/imgPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:contentDescription="Foto del grupo (reverso)"/>
+    </com.google.android.material.card.MaterialCardView>
+
+</FrameLayout>

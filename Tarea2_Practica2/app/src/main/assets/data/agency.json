@@ -1,0 +1,104 @@
+{
+  "version": 1,
+  "id": "jyp",
+  "name": "JYP Entertainment",
+  "description": "Hub visual con accesos a HQ, Studio, Practice y carrusel.",
+  "locale": "es-MX",
+
+  "ui": {
+    "background": { "type": "gradient", "colors": ["#00B5CC", "#007A88"], "angle": 180 },
+    "icons": [
+      {
+        "id": "ico_hq",
+        "icon": "ic_jyp_logo",
+        "label": "JYP HQ",
+        "a11yLabel": "Abrir información de JYP HQ",
+        "action": { "type": "openPoi", "poiId": "poi_hq" },
+        "position": { "xPercent": 50, "yPercent": 22 }
+      },
+      {
+        "id": "ico_studio",
+        "icon": "ic_microphone",
+        "label": "Studio A",
+        "a11yLabel": "Abrir sala de grabación",
+        "action": { "type": "openPoi", "poiId": "poi_studio_a" },
+        "position": { "xPercent": 22, "yPercent": 52 }
+      },
+      {
+        "id": "ico_practice",
+        "icon": "ic_dancer",
+        "label": "Practice Rooms",
+        "a11yLabel": "Abrir salas de práctica",
+        "action": { "type": "openPoi", "poiId": "poi_practice" },
+        "position": { "xPercent": 78, "yPercent": 52 }
+      },
+      {
+        "id": "ico_jyp_nation",
+        "icon": "ic_jyp_nation",
+        "label": "JYP Nation",
+        "a11yLabel": "Abrir carrusel de grupos",
+        "action": { "type": "navigate", "target": "CarouselActivity", "params": {} },
+        "position": { "xPercent": 50, "yPercent": 82 }
+      }
+    ]
+  },
+
+  "pois": [
+    {
+      "id": "poi_hq",
+      "type": "gallery+text",
+      "title": "JYP HQ",
+      "description": "Sede central: management, A&R y estrategia.",
+      "media": {
+        "images": [
+          "res://drawable/hq_01",
+          "res://drawable/hq_02",
+          "res://drawable/hq_03"
+        ]
+      },
+      "info": {
+        "highlights": [
+          "Fundada en 1997",
+          "Training y producción in-house",
+          "Artistas con giras globales"
+        ],
+        "more": "Breve reseña histórica de la compañía."
+      },
+      "a11yLabel": "Información e imágenes de la sede JYP"
+    },
+    {
+      "id": "poi_studio_a",
+      "type": "video+image",
+      "title": "Studio A",
+      "description": "Composición, grabación y mezcla.",
+      "media": {
+        "image": "res://drawable/studio_a",
+        "video": {
+          "title": "Sesión de grabación (demo)",
+          "thumbnail": "res://drawable/studio_thumb",
+          "source": "res://raw/studio_session"
+        }
+      },
+      "a11yLabel": "Foto del estudio y un video corto de grabación"
+    },
+    {
+      "id": "poi_practice",
+      "type": "gallery+video",
+      "title": "Practice Rooms",
+      "description": "Entrenamiento y coreografías.",
+      "media": {
+        "images": [
+          "res://drawable/practice_room_01",
+          "res://drawable/practice_room_02",
+          "res://drawable/practice_room_03"
+        ],
+        "video": {
+          "title": "Dance Practice (demo)",
+          "thumbnail": "res://drawable/practice_thumb",
+          "source": "res://raw/practice_demo"
+        }
+      },
+      "a11yLabel": "Galería de salas de práctica y un video de dance practice"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+<resources>
+
+    <!-- Claro -->
+    <style name="Theme.Tarea2.Light" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/jyp_primary_light</item>
+        <item name="colorOnPrimary">@color/jyp_on_primary_light</item>
+
+        <item name="android:colorBackground">@color/jyp_bg_light</item>
+        <item name="colorSurface">@color/jyp_surface_light</item>
+        <item name="colorOnSurface">@color/jyp_on_surface_light</item>
+
+        <!-- Textos por defecto -->
+        <item name="android:textColorPrimary">@color/jyp_on_bg_light</item>
+        <item name="android:textColorSecondary">@color/jyp_on_surface_light</item>
+
+        <!-- Forzar apariencias Material3 a usar alto contraste -->
+        <item name="textAppearanceHeadlineMedium">@style/AppText.Headline</item>
+        <item name="textAppearanceTitleMedium">@style/AppText.Title</item>
+        <item name="textAppearanceBodyLarge">@style/AppText.Body</item>
+        <item name="textAppearanceBodyMedium">@style/AppText.Body</item>
+        <item name="textAppearanceBodySmall">@style/AppText.BodySecondary</item>
+    </style>
+
+    <!-- Oscuro -->
+    <style name="Theme.Tarea2.Dark" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="colorPrimary">@color/jyp_primary_dark</item>
+        <item name="colorOnPrimary">@color/jyp_on_primary_dark</item>
+
+        <item name="android:colorBackground">@color/jyp_bg_dark</item>
+        <item name="colorSurface">@color/jyp_surface_dark</item>
+        <item name="colorOnSurface">@color/jyp_on_surface_dark</item>
+
+        <!-- Textos por defecto -->
+        <item name="android:textColorPrimary">@color/jyp_on_bg_dark</item>
+        <item name="android:textColorSecondary">@color/jyp_on_surface_dark</item>
+
+        <!-- Mismas apariencias con alto contraste -->
+        <item name="textAppearanceHeadlineMedium">@style/AppText.Headline</item>
+        <item name="textAppearanceTitleMedium">@style/AppText.Title</item>
+        <item name="textAppearanceBodyLarge">@style/AppText.Body</item>
+        <item name="textAppearanceBodyMedium">@style/AppText.Body</item>
+        <item name="textAppearanceBodySmall">@style/AppText.BodySecondary</item>
+    </style>
+
+    <!-- Estilos compartidos de texto (se aplican en ambos temas) -->
+    <style name="AppText.Headline" parent="TextAppearance.Material3.HeadlineMedium">
+        <item name="android:textColor">?attr/colorOnBackground</item>
+    </style>
+    <style name="AppText.Title" parent="TextAppearance.Material3.TitleMedium">
+        <item name="android:textColor">?attr/colorOnBackground</item>
+    </style>
+    <style name="AppText.Body" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:textColor">?attr/colorOnBackground</item>
+    </style>
+    <style name="AppText.BodySecondary" parent="TextAppearance.Material3.BodySmall">
+        <item name="android:textColor">?attr/colorOnSurface</item>
+    </style>
+
+    <!-- (lo que ya tenías) -->
+    <style name="RoundedIcon">
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.Material3.Corner.Full</item>
+    </style>
+    <style name="Theme.Tarea2" parent="Theme.Material3.DayNight.NoActionBar" />
+</resources>

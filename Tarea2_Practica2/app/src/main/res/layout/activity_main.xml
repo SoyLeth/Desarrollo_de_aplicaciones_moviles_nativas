@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_jyp_gradient"
+    tools:context=".MainActivity">
+
+    <!-- Logo grande JYP arriba -->
+    <ImageView
+        android:id="@+id/heroLogo"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:contentDescription="@string/cd_open_hq"
+        android:src="@drawable/jyp_logo_hero"
+        android:scaleType="centerInside"
+        android:padding="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"/>
+
+    <!-- Card 1: JYP HQ -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardHq"
+        android:layout_width="160dp"
+        android:layout_height="180dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="6dp"
+        app:strokeWidth="1dp"
+        app:strokeColor="#40FFFFFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:contentDescription="@string/cd_open_hq"
+                android:src="@drawable/ic_jyp_logo"
+                android:scaleType="centerInside" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Conoce JYP Entertainment"
+                android:textColor="?attr/colorOnSurface"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:paddingTop="8dp"/>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Card 2: Studio -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardStudio"
+        android:layout_width="160dp"
+        android:layout_height="180dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="6dp"
+        app:strokeWidth="1dp"
+        app:strokeColor="#40FFFFFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:contentDescription="@string/cd_open_studio"
+                android:src="@drawable/ic_microphone"
+                android:scaleType="centerInside" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Conoce el estudio de grabación"
+                android:textColor="?attr/colorOnSurface"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:paddingTop="8dp"/>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Card 3: Practice -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardPractice"
+        android:layout_width="160dp"
+        android:layout_height="180dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="6dp"
+        app:strokeWidth="1dp"
+        app:strokeColor="#40FFFFFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:contentDescription="@string/cd_open_practice"
+                android:src="@drawable/ic_dancer"
+                android:scaleType="centerInside" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Conoce las salas de práctica"
+                android:textColor="?attr/colorOnSurface"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:paddingTop="8dp"/>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Card 4: JYP Nation -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardNation"
+        android:layout_width="160dp"
+        android:layout_height="180dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="6dp"
+        app:strokeWidth="1dp"
+        app:strokeColor="#40FFFFFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:contentDescription="@string/btn_jyp_nation"
+                android:src="@drawable/ic_jyp_nation"
+                android:scaleType="centerInside" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Conoce a los grupos"
+                android:textColor="?attr/colorOnSurface"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:paddingTop="8dp"/>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Flow 2x2 debajo del logo -->
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/flow"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:constraint_referenced_ids="cardHq,cardStudio,cardPractice,cardNation"
+        app:flow_wrapMode="chain"
+        app:flow_maxElementsWrap="2"
+        app:flow_horizontalGap="16dp"
+        app:flow_verticalGap="16dp"
+        app:flow_horizontalStyle="packed"
+        app:flow_verticalStyle="packed"
+        app:layout_constraintTop_toBottomOf="@id/heroLogo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.google.android.material.materialswitch.MaterialSwitch
+        android:id="@+id/switchTheme"
+        android:layout_width="68dp"
+        android:layout_height="36dp"
+        android:layout_margin="12dp"
+        android:contentDescription="@string/theme_toggle"
+        app:trackTint="@color/switch_track_tint"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

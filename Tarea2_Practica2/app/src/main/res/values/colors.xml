@@ -1,0 +1,25 @@
+<resources>
+    <!-- Textos en tarjetas -->
+    <color name="cardTextColor">#FFFFFF</color>      <!-- blanco -->
+    <color name="sheetTitleColor">#FFFFFF</color>    <!-- blanco -->
+    <color name="sheetBodyColor">#EDEDED</color>
+
+        <!-- Claro -->
+        <color name="jyp_primary_light">#00A9FF</color>
+        <color name="jyp_on_primary_light">#FFFFFF</color>
+        <color name="jyp_bg_light">#FAFAFA</color>
+        <color name="jyp_on_bg_light">#111111</color>
+        <color name="jyp_surface_light">#FFFFFF</color>
+        <color name="jyp_on_surface_light">#1A1A1A</color>
+
+        <!-- Oscuro -->
+        <color name="jyp_primary_dark">#54C8FF</color>
+        <color name="jyp_on_primary_dark">#00121A</color>
+        <color name="jyp_bg_dark">#101317</color>
+        <color name="jyp_on_bg_dark">#EDEDED</color>
+        <color name="jyp_surface_dark">#171B20</color>
+        <color name="jyp_on_surface_dark">#F5F5F5</color>
+
+
+
+</resources>

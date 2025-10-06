@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- círculo central -->
+    <path
+        android:fillColor="@android:color/white"
+        android:pathData="M12,12 m -5,0 a5,5 0 1,0 10,0 a5,5 0 1,0 -10,0" />
+
+    <!-- 8 rayos (rectángulos finos) -->
+    <path android:fillColor="@android:color/white" android:pathData="M11.25,1 L12.75,1 L12.75,5 L11.25,5" />
+    <path android:fillColor="@android:color/white" android:pathData="M11.25,19 L12.75,19 L12.75,23 L11.25,23" />
+
+    <path android:fillColor="@android:color/white" android:pathData="M19,11.25 L23,11.25 L23,12.75 L19,12.75" />
+    <path android:fillColor="@android:color/white" android:pathData="M1,11.25 L5,11.25 L5,12.75 L1,12.75" />
+
+    <path android:fillColor="@android:color/white" android:pathData="M17.07,3.51 L18.12,4.56 L15.29,7.39 L14.24,6.34" />
+    <path android:fillColor="@android:color/white" android:pathData="M5.88,19.44 L6.93,20.49 L9.76,17.66 L8.71,16.61" />
+
+    <path android:fillColor="@android:color/white" android:pathData="M17.07,20.49 L18.12,19.44 L15.29,16.61 L14.24,17.66" />
+    <path android:fillColor="@android:color/white" android:pathData="M5.88,4.56 L6.93,3.51 L9.76,6.34 L8.71,7.39" />
+</vector>

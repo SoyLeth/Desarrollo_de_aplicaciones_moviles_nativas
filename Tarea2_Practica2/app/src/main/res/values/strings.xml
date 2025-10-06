@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Tarea2</string>
+        <string name="cd_open_hq">Abrir información de JYP HQ</string>
+        <string name="cd_open_studio">Abrir sala de grabación</string>
+        <string name="cd_open_practice">Abrir salas de práctica</string>
+        <string name="btn_jyp_nation">JYP Nation</string>
+        <string name="toast_nation">Abrir carrusel de grupos</string>
+    <string name="theme_toggle">Cambiar tema</string>
+
+</resources>

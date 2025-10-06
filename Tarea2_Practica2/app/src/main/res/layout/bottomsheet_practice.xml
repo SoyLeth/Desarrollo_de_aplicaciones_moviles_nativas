@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:overScrollMode="always">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Título centrado con color de tema -->
+        <TextView
+            android:text="Salas de Práctica"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="?attr/colorOnBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:gravity="center" />
+
+        <ImageView
+            android:id="@+id/imgPractice1"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:src="@drawable/practice_room_01"
+            android:contentDescription="Sala de práctica 1"
+            android:layout_marginTop="8dp" />
+
+        <ImageView
+            android:id="@+id/imgPractice2"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:src="@drawable/practice_room_02"
+            android:contentDescription="Sala de práctica 2"
+            android:layout_marginTop="8dp" />
+
+        <VideoView
+            android:id="@+id/videoPractice"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginTop="8dp"
+            android:keepScreenOn="true"
+             />
+
+        <!-- Texto informativo opcional -->
+        <TextView
+            android:id="@+id/txtPractice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:lineSpacingExtra="2dp"
+            android:textColor="?attr/colorOnSurface"
+            android:text="" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

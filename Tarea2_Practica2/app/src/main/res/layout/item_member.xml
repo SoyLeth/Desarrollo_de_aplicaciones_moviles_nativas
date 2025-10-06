@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardRootMember"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Frente (foto del miembro) -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/frontCardMember"
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:focusable="true"
+        android:stateListAnimator="@null"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="0dp"
+        app:strokeWidth="0dp"
+        app:strokeColor="@android:color/transparent">
+
+        <ImageView
+            android:id="@+id/imgMemberFront"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:clickable="false"
+            android:focusable="false"
+            android:contentDescription="Foto del miembro"/>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Reverso (color del grupo + nombre/cumple centrados + logo abajo) -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/backCardMember"
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:clickable="true"
+        android:focusable="true"
+        android:stateListAnimator="@null"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="0dp"
+        app:strokeWidth="0dp"
+        app:strokeColor="@android:color/transparent"
+        app:cardBackgroundColor="@android:color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- Espaciador superior -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <!-- Bloque central (Nombre + Cumple), centrado vertical y horizontal -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/tvMemberName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nombre del idol"
+                    android:textStyle="bold"
+                    android:textSize="22sp"
+                    android:textColor="@android:color/black"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/tvMemberBirth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Fecha de nacimiento"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <!-- Espaciador entre textos y logo -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <!-- Logo del grupo (abajo, centrado). Tamaño como tu imgLogo: 220x120dp -->
+            <ImageView
+                android:id="@+id/imgGroupLogo"
+                android:layout_width="220dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="fitCenter"
+                android:clickable="false"
+                android:focusable="false"
+                android:contentDescription="Logo del grupo"/>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</FrameLayout>
