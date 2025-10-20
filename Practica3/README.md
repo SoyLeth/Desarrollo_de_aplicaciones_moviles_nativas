@@ -87,6 +87,8 @@ app/
 6. Consulta **Recientes** en su pestaña; puedes **limpiarlos** en el menú de Settings.
 7. Cambia de **tema** en el menú de **Settings**.
 
+<img width="300" src="images/raiz.jpg" />
+
 ---
 
 ## 🎨 Temas
@@ -96,6 +98,8 @@ app/
 - Ambas paletas con adaptación **claro/oscuro**.  
 Selecciona el tema en **Settings**; la opción activa aparece con ✔.
 
+<img width="300" src="images/tema1.jpg" />
+<img width="300" src="images/tema2.jpg" />
 ---
 
 ## 🔐 Scoped Storage y permisos
@@ -121,6 +125,8 @@ Selecciona el tema en **Settings**; la opción activa aparece con ✔.
   - **Lista** o **Grid** con miniaturas (Coil).
   - **Long press** ⇒ Hoja de acciones (renombrar/eliminar).
   - **Abrir con…** siempre vía `ACTION_VIEW`.
+
+<img width="300" src="images/im3.jpg" />
 
 ---
 
