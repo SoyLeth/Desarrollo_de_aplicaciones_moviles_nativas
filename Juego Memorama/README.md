@@ -108,16 +108,3 @@ cd <NOMBRE_DEL_REPO>
 
 ---
 
-## Capturas de pantalla
-
-### Pantalla principal
-![Pantalla principal](docs/screenshot_home.png)
-
-### Configuración de partida
-![Menú de configuración](docs/screenshot_menu.png)
-
-### Juego en progreso
-![Juego](docs/screenshot_game.png)
-
-### Bluetooth (setup / votación)
-![Bluetooth](docs/screenshot_bt.png)
