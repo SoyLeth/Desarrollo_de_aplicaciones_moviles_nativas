@@ -18,6 +18,17 @@ El tablero puede configurarse en distintos tamaños:
 
 Las cartas usan imágenes (drawables) como “frente” y una imagen para el “dorso”.
 
+<img width="300" src="images/img1.jpg" />
+
+<img width="300" src="images/img2.jpg" />
+
+<img width="300" src="images/img3.jpg" />
+
+<img width="300" src="images/img4.jpg" />
+
+<img width="300" src="images/img5.jpg" />
+
+<img width="300" src="images/img6.jpg" />
 ---
 
 ## Reglas del juego
